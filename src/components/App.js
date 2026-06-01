@@ -6,7 +6,7 @@ const App = () => {
   const [data, setData] = useState("Loading...");
 
   useEffect(() => {
-    setTimeout(() => {
+    
       fetch("https://dummyjson.com/products")
         .then((res) => {
           if (!res.ok) throw new Error("Error..!");
@@ -18,7 +18,7 @@ const App = () => {
         .catch((err) => {
           setData(err.message);
         });
-    }, 3000);
+    
   }, []);
 
   return (
