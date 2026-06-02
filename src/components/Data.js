@@ -6,7 +6,7 @@ const Data = ({ data }) => {
       {/* Renders the required heading once loading completes */}
       {typeof data !== "string" && <h1>Data Fetched from API</h1>}
       
-      {/* 🎯 Formatted stringified output matching strict test assertions */}
+      {/* Formatted stringified output matching strict test assertions */}
       <pre>
         {typeof data === "string" ? data : JSON.stringify(data, null, 2)}
       </pre>
